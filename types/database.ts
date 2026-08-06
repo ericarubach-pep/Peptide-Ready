@@ -1,6 +1,15 @@
 // Hand-written to match supabase/migrations/*.sql. Regenerate with
 // `supabase gen types typescript` once a real project is linked and swap
 // this out — this file exists so the app has types before that's wired up.
+//
+// IMPORTANT: every Row/Insert/Update shape below must be declared with
+// `type`, not `interface`. postgrest-js's GenericTable/GenericSchema
+// constraints check `extends Record<string, unknown>`, and a plain
+// `interface` (even with identical fields) does not satisfy that check —
+// TypeScript only infers the implicit index signature for `type` object
+// literals. Using `interface` here silently resolves every query's Row type
+// to `never` instead of erroring, which is exactly what happened the first
+// time this file was written with interfaces — see git history if curious.
 
 export type OrgType =
   | "med_spa"
@@ -22,14 +31,14 @@ export type EmailSubscriberSource = "sample_page" | "vendor_page" | "waitlist";
 export type AiFeature = "faq" | "caption" | "script";
 export type ConsumerTier = "consumer" | "professional" | "enterprise";
 
-export interface AdministrationSummary {
+export type AdministrationSummary = {
   route?: string;
   dose_range?: string;
   timing?: string;
   cycling?: string;
-}
+};
 
-export interface Organization {
+export type Organization = {
   id: string;
   org_name: string;
   org_type: OrgType;
@@ -46,16 +55,16 @@ export interface Organization {
   attribution_visible: boolean;
   created_at: string;
   updated_at: string;
-}
+};
 
-export interface OrgUser {
+export type OrgUser = {
   id: string;
   org_id: string;
   role: OrgUserRole;
   created_at: string;
-}
+};
 
-export interface Peptide {
+export type Peptide = {
   id: string;
   slug: string;
   name: string;
@@ -68,9 +77,9 @@ export interface Peptide {
   last_reviewed: string | null;
   created_at: string;
   updated_at: string;
-}
+};
 
-export interface RegulatoryEvent {
+export type RegulatoryEvent = {
   id: string;
   peptide_id: string | null;
   event_type: RegulatoryEventType;
@@ -79,9 +88,9 @@ export interface RegulatoryEvent {
   source_url: string | null;
   is_active: boolean;
   created_at: string;
-}
+};
 
-export interface VendorPartner {
+export type VendorPartner = {
   id: string;
   org_name: string;
   org_type: VendorOrgType;
@@ -95,9 +104,9 @@ export interface VendorPartner {
   is_active: boolean;
   created_at: string;
   updated_at: string;
-}
+};
 
-export interface PatientFaqLog {
+export type PatientFaqLog = {
   id: string;
   org_id: string;
   question_text: string;
@@ -105,24 +114,24 @@ export interface PatientFaqLog {
   answered_at: string | null;
   flagged: boolean;
   created_at: string;
-}
+};
 
-export interface EmailSubscriber {
+export type EmailSubscriber = {
   id: string;
   email: string;
   source: EmailSubscriberSource;
   created_at: string;
-}
+};
 
-export interface AiUsage {
+export type AiUsage = {
   id: string;
   org_id: string;
   feature: AiFeature;
   tokens_used: number;
   created_at: string;
-}
+};
 
-export interface ConsumerSubscriber {
+export type ConsumerSubscriber = {
   id: string;
   org_id: string;
   tier: ConsumerTier;
@@ -133,30 +142,55 @@ export interface ConsumerSubscriber {
   affiliate_ref: string | null;
   created_at: string;
   updated_at: string;
-}
+};
 
-export interface WebhookLog {
+export type WebhookLog = {
   id: string;
   provider: string;
   event_id: string;
   event_type: string;
   payload: Record<string, unknown>;
   processed_at: string;
-}
+};
 
-export interface Database {
+export type PlatformAdmin = {
+  id: string;
+  created_at: string;
+};
+
+type GenericRelationship = {
+  foreignKeyName: string;
+  columns: string[];
+  isOneToOne?: boolean;
+  referencedRelation: string;
+  referencedColumns: string[];
+};
+
+// postgrest-js's GenericTable requires Relationships (even if empty) or every
+// query on the table silently resolves to `never` instead of erroring.
+type Table<Row, Insert = Partial<Row>, Update = Partial<Row>> = {
+  Row: Row;
+  Insert: Insert;
+  Update: Update;
+  Relationships: GenericRelationship[];
+};
+
+export type Database = {
   public: {
     Tables: {
-      organizations: { Row: Organization; Insert: Partial<Organization>; Update: Partial<Organization> };
-      org_users: { Row: OrgUser; Insert: Partial<OrgUser>; Update: Partial<OrgUser> };
-      peptides: { Row: Peptide; Insert: Partial<Peptide>; Update: Partial<Peptide> };
-      regulatory_events: { Row: RegulatoryEvent; Insert: Partial<RegulatoryEvent>; Update: Partial<RegulatoryEvent> };
-      vendor_partners: { Row: VendorPartner; Insert: Partial<VendorPartner>; Update: Partial<VendorPartner> };
-      patient_faq_log: { Row: PatientFaqLog; Insert: Partial<PatientFaqLog>; Update: Partial<PatientFaqLog> };
-      email_subscribers: { Row: EmailSubscriber; Insert: Partial<EmailSubscriber>; Update: Partial<EmailSubscriber> };
-      ai_usage: { Row: AiUsage; Insert: Partial<AiUsage>; Update: Partial<AiUsage> };
-      consumer_subscribers: { Row: ConsumerSubscriber; Insert: Partial<ConsumerSubscriber>; Update: Partial<ConsumerSubscriber> };
-      webhook_logs: { Row: WebhookLog; Insert: Partial<WebhookLog>; Update: Partial<WebhookLog> };
+      organizations: Table<Organization>;
+      org_users: Table<OrgUser>;
+      peptides: Table<Peptide>;
+      regulatory_events: Table<RegulatoryEvent>;
+      vendor_partners: Table<VendorPartner>;
+      patient_faq_log: Table<PatientFaqLog>;
+      email_subscribers: Table<EmailSubscriber>;
+      ai_usage: Table<AiUsage>;
+      consumer_subscribers: Table<ConsumerSubscriber>;
+      webhook_logs: Table<WebhookLog>;
+      platform_admins: Table<PlatformAdmin>;
     };
+    Views: Record<string, never>;
+    Functions: Record<string, never>;
   };
-}
+};

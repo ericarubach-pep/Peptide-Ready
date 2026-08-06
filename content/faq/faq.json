@@ -1,0 +1,16 @@
+[
+  {
+    "id": "what-is-a-peptide",
+    "question": "What is a peptide?",
+    "answer": "A peptide is a short chain of amino acids — the same building blocks your body already uses to make proteins and hormones. Peptides are naturally produced and broken down by the body; they are not foreign chemicals.",
+    "category": "basics",
+    "related_slug": null
+  },
+  {
+    "id": "are-peptides-legal",
+    "question": "Are peptides legal?",
+    "answer": "Legal status varies by specific peptide and by how it is sourced and sold. Some peptides are FDA-approved drugs, some fall under FDA compounding categories, and others are sold for research use only. Regulatory status can change — see the regulatory tracker for current status and always verify with primary sources.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  }
+]

@@ -3,9 +3,16 @@ import Link from "next/link";
 import { AttorneyReviewedBadge } from "@/components/peptide/AttorneyReviewedBadge";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { Peptide } from "@/types/database";
+import type { OrgTier } from "@/types/database";
 
-export function PeptideCard({ peptide, href }: { peptide: Peptide; href: string }) {
+export interface PeptideCardData {
+  name: string;
+  category: string;
+  min_tier: OrgTier;
+  attorney_reviewed: boolean;
+}
+
+export function PeptideCard({ peptide, href }: { peptide: PeptideCardData; href: string }) {
   return (
     <Link href={href}>
       <Card className="h-full transition-shadow hover:shadow-md">
