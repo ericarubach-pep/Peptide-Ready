@@ -1,15 +1,23 @@
 import faqData from "@/content/faq/faq.json";
 
 // Section 8.4 v1 — structured, searchable FAQ built from the Most Searched
-// Questions document. NOTE: that source doc hasn't been provided yet; the
-// two entries below are placeholders proving the pipeline, not real content.
-// Replace content/faq/faq.json wholesale once the actual document arrives.
+// Questions About Peptides document (48 questions across 7 categories).
+// content/faq/faq.json holds the full set of real, compliance-reviewed
+// entries — grounded in content/peptides/*.mdx and content/guides/*.mdx —
+// not placeholders.
 
 export interface FaqEntry {
   id: string;
   question: string;
   answer: string;
-  category: "basics" | "safety_and_legality" | "practical_use" | "goal_specific";
+  category:
+    | "basics"
+    | "safety_and_legality"
+    | "practical_use"
+    | "goal_specific"
+    | "compound_specific"
+    | "access_and_sourcing"
+    | "context_and_skepticism";
   related_slug: string | null;
 }
 

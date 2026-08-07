@@ -1,16 +1,338 @@
 [
   {
-    "id": "what-is-a-peptide",
-    "question": "What is a peptide?",
-    "answer": "A peptide is a short chain of amino acids — the same building blocks your body already uses to make proteins and hormones. Peptides are naturally produced and broken down by the body; they are not foreign chemicals.",
+    "id": "peptides-vs-proteins",
+    "question": "What are peptides, and how are they different from proteins?",
+    "answer": "A peptide is a short chain of amino acids — generally between 2 and 49 linked together — while a protein is a much longer chain, typically 100 or more amino acids, folded into a complex three-dimensional structure. The same 20 amino acids act as building blocks for both categories; a polypeptide (roughly 50–99 amino acids) sits in between as a transitional size. Peptides are generally described in the source material as short, precise signaling molecules — comparable to a brief instruction or message — while proteins function more like structural workers, building tissue such as muscle fibers or carrying out complex jobs like transporting oxygen.",
+    "category": "basics",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "how-peptides-work",
+    "question": "How do peptides work in the body?",
+    "answer": "Peptides act as signaling molecules: a peptide is released by one part of the body, travels through the bloodstream or surrounding tissue, and binds to a matching receptor on a target cell — a relationship often described as a key fitting a specific lock. Once bound, the receptor can trigger changes inside the cell, including shifts in gene expression, hormone release, tissue repair activity, immune modulation, or metabolic changes. Without a matching receptor, a given peptide has no effect on that cell, which is part of what makes peptide signaling described as precise rather than broad-acting.",
+    "category": "basics",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "peptides-natural-or-synthetic",
+    "question": "Are peptides natural or synthetic?",
+    "answer": "Both — the body produces hundreds of peptides naturally as part of ordinary biological signaling, and many peptides used in research and clinical settings are lab-synthesized versions or fragments of those same naturally occurring molecules. A synthesized peptide is generally designed to match or closely resemble a sequence the body already makes or recognizes, rather than introducing an unrelated foreign structure, which is part of why peptides are described in the source material as distinct from a typical synthetic pharmaceutical drug.",
+    "category": "basics",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "peptides-vs-hormones",
+    "question": "What's the difference between peptides and hormones?",
+    "answer": "These categories overlap rather than sitting side by side: a hormone is defined by its role — a signaling substance released into the bloodstream that affects a distant target — while a peptide is defined by its structure, a short chain of amino acids. Many hormones, including growth hormone-releasing hormone and insulin, are themselves peptides, while other hormones, such as testosterone or cortisol, are built from cholesterol rather than amino acids. A given molecule can be both a peptide and a hormone at once, or a hormone without being a peptide, depending on what it's made of.",
+    "category": "basics",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "peptides-vs-steroids",
+    "question": "Are peptides the same as steroids?",
+    "answer": "No — the source material draws a clear structural and functional distinction between the two. Steroids are synthetic hormones, generally built from a cholesterol-based structure, that directly replace or override the body's own hormone output, often suppressing natural production in the process. Peptides, with few exceptions, are described as working by signaling the body to regulate its own hormone and repair processes rather than replacing them outright — a difference in mechanism, not just terminology.",
+    "category": "basics",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "most-popular-peptides",
+    "question": "What are the most popular peptides people are using right now?",
+    "answer": "Search and clinical interest tends to concentrate around a recurring set of compounds: GLP-1 peptides like semaglutide and tirzepatide for metabolic and weight-related goals; BPC-157 and TB-500 for injury and tissue-repair research; GH-axis peptides like CJC-1295 and Ipamorelin for body composition and recovery; GHK-Cu for skin- and repair-related research; and NAD+ and Epithalon in longevity-focused contexts. Popularity is not the same as regulatory status or evidence strength — each compound sits at a different point on the research and approval spectrum, covered in detail on its individual profile page.",
     "category": "basics",
     "related_slug": null
   },
   {
+    "id": "are-peptides-safe",
+    "question": "Are peptides safe to use?",
+    "answer": "Safety is described in the source material as depending heavily on the specific peptide, its sourcing, dose, and duration of use, rather than being a single yes-or-no answer for the whole category. Because peptides are broken down into their constituent amino acids the same way dietary protein is, they are generally described as not accumulating in tissue the way some pharmaceutical drugs do, which is framed as contributing to a generally favorable safety profile — but 'generally favorable' is not the same as risk-free, and most peptides referenced on this platform remain research compounds rather than FDA-approved drugs. Physician involvement and individualized evaluation are described across the source material as the standard recommendation before starting any peptide.",
+    "category": "safety_and_legality",
+    "related_slug": "peptides-101"
+  },
+  {
     "id": "are-peptides-legal",
     "question": "Are peptides legal?",
-    "answer": "Legal status varies by specific peptide and by how it is sourced and sold. Some peptides are FDA-approved drugs, some fall under FDA compounding categories, and others are sold for research use only. Regulatory status can change — see the regulatory tracker for current status and always verify with primary sources.",
+    "answer": "Legal status varies by the specific peptide and by how it is sourced, marketed, and sold, rather than being one answer for 'peptides' as a category. Some peptides are FDA-approved prescription drugs, some fall under FDA compounding categories (sometimes called Category 1 or Category 2), and others are sold labeled 'for research use only,' which carries its own distinct restrictions on human use. Because these classifications can change over time as regulatory bodies review specific compounds, current status for any individual peptide is best confirmed through the platform's regulatory tracker rather than treated as fixed.",
     "category": "safety_and_legality",
     "related_slug": null
+  },
+  {
+    "id": "fda-approved-vs-research-only",
+    "question": "Which peptides are FDA-approved vs. research-only?",
+    "answer": "A small number of peptides referenced on this platform have gone through full FDA drug approval for specific indications — examples include semaglutide and tirzepatide for diabetes and weight management, teriparatide for osteoporosis, tesamorelin for HIV-related fat accumulation, and sermorelin for pediatric growth hormone deficiency. The majority of peptides covered in this library, including BPC-157, TB-500, GHK-Cu, CJC-1295, Ipamorelin, Epithalon, Semax, and Selank, are not FDA-approved for human use and are described as research compounds that remain under investigation, meaning any human use of them is off-label. Each compound's individual page states its current status.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  },
+  {
+    "id": "fda-restrictions-2026",
+    "question": "What happened with the FDA restricting peptides — and what changed in 2026?",
+    "answer": "Peptide compounds sold through compounding pharmacies in the United States are generally evaluated under one of two FDA compounding categories, sometimes called Category 1 and Category 2 — a separate question from full FDA drug approval. A peptide can move between compounding categories without ever becoming an FDA-approved drug, and an FDA-approved drug such as semaglutide sits in a different regulatory track entirely. The FDA's Pharmacy Compounding Advisory Committee (PCAC) periodically reviews bulk substances, including several commonly compounded peptides, to recommend which category they belong in, and a PCAC meeting addressing a number of these peptides took place in July 2026. This platform does not treat the outcome of that meeting as settled: regulatory status for a given peptide can change based on PCAC recommendations, subsequent FDA action, or other rulemaking, and the specific, current status of any individual compound should always be checked against the platform's regulatory tracker rather than assumed from this answer.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  },
+  {
+    "id": "peptides-cancer-risk",
+    "question": "Can peptides cause cancer or promote tumor growth?",
+    "answer": "Whether peptide use meaningfully changes cancer risk is not something this platform states as settled in either direction, and any real answer likely depends heavily on the specific peptide, dose, duration, and a person's individual cancer history. Some peptides are studied specifically because they appear anti-inflammatory or tissue-protective, while others — melanocyte-stimulating peptides are a documented example in this library — carry specific, real safety flags around mole changes and skin cancer risk that a licensed provider needs to evaluate directly. Because growth-promoting and cell-signaling pathways are involved in both healing and tumor biology, research-descriptive sources generally recommend that anyone with a personal or family cancer history discuss any peptide, current or planned, with a licensed physician rather than relying on general information alone.",
+    "category": "safety_and_legality",
+    "related_slug": "melanotan"
+  },
+  {
+    "id": "doctor-vs-gray-market",
+    "question": "Can you get peptides from a doctor, or do you need to go gray market?",
+    "answer": "Both pathways exist. Some peptides are available through a prescribing physician or a compounding pharmacy operating within FDA compounding rules, particularly for FDA-approved drugs or peptides currently permitted under compounding categories. Others are sold online as 'research chemicals' outside any medical or pharmacy oversight — a channel commonly referred to as the gray market — which carries different, generally higher, sourcing and quality-control risks than a prescription or compounded product. Route of access is one of the factors described in the source material as relevant to a peptide's overall risk profile, alongside the specific compound and dose.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  },
+  {
+    "id": "risks-buying-online",
+    "question": "What are the risks of buying peptides online?",
+    "answer": "Peptides purchased online outside a licensed pharmacy or medical channel are not subject to the same oversight as prescription or compounded pharmaceutical products, which introduces risk around purity, accurate labeling, sterility, and correct identification of the actual compound in the vial. Products sold as 'research use only' are, by their own labeling, not intended for human consumption, meaning there is no regulatory body verifying what a buyer actually receives. These are described in the source material as reasons that sourcing and independent verification — such as third-party lab testing — matter as much as the compound itself.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  },
+  {
+    "id": "spotting-contaminated-products",
+    "question": "How do I know if a peptide product is legit and not contaminated?",
+    "answer": "Third-party laboratory testing, independent of the seller, is the commonly cited way to verify that a vial contains the labeled peptide at the labeled purity and concentration, generally documented in a Certificate of Analysis (CoA) that reports identity, purity percentage, and screening for contaminants such as heavy metals, bacteria, or endotoxins. A CoA tied to a specific batch or lot number, from an accredited independent lab, is generally regarded as a stronger signal than a generic or seller-produced document. This platform does not verify or endorse specific vendors; the presence and quality of independent testing documentation is described as one of the primary things to evaluate.",
+    "category": "safety_and_legality",
+    "related_slug": null
+  },
+  {
+    "id": "inject-or-oral",
+    "question": "Do you have to inject peptides, or can you take them orally?",
+    "answer": "It depends on the specific peptide. Most peptides are broken down by digestive enzymes before they can reach the bloodstream intact, which is why injectable delivery, generally subcutaneous, is the standard, best-studied route for many of them. That said, some peptides are researched for oral or nasal-spray delivery depending on the specific molecule and target — BPC-157, for example, is unusually stable in gastric juice and is used orally specifically for gut-focused goals, while other peptides have no meaningfully effective oral form at all. Route of administration is generally compound-specific rather than a single rule across the whole category.",
+    "category": "practical_use",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "subq-vs-im-injection",
+    "question": "What's the difference between subcutaneous and intramuscular injection?",
+    "answer": "Subcutaneous administration delivers into the fatty tissue layer just under the skin, while intramuscular administration goes deeper, into muscle tissue; the two routes are associated with different absorption speeds and are generally chosen based on the specific peptide, needle length, and injection site rather than personal preference alone. Shorter needles paired with a straight, 90-degree angle are commonly described as suited to subcutaneous delivery, while longer needles paired with pinched skin or an angled approach are described as helping keep delivery in the intended tissue layer rather than drifting into muscle. A healthcare provider or diabetes educator is the resource typically cited for assessing body composition and technique for a specific situation.",
+    "category": "practical_use",
+    "related_slug": "understanding-insulin-syringe-components"
+  },
+  {
+    "id": "how-to-reconstitute-peptides",
+    "question": "How do you reconstitute peptide powder?",
+    "answer": "Reconstitution involves adding a liquid, generally bacteriostatic water, to lyophilized (freeze-dried) peptide powder to create a solution that can be measured and drawn into a syringe. The core math involves three separate measurements that are easy to conflate: how much peptide is in the vial (mg or mcg), how much liquid it's mixed with (mL), and what the syringe itself measures (units, which reflect volume only and say nothing about concentration on their own). Because the relationship between weight and syringe units depends entirely on how much liquid was used to reconstitute the powder, this calculation is described in the source material as one best confirmed with a pharmacist or physician rather than approximated.",
+    "category": "practical_use",
+    "related_slug": "understanding-insulin-syringe-components"
+  },
+  {
+    "id": "how-to-store-peptides",
+    "question": "How do you store peptides properly?",
+    "answer": "General practice described across peptide research and clinical literature is to store lyophilized (unreconstituted) peptide powder in a cool, dark, dry environment, often refrigerated, away from light and heat, both of which can degrade the peptide structure over time. Once reconstituted with liquid, most peptides are described as needing refrigeration and are generally used within a limited window rather than stored indefinitely, since a reconstituted solution is more prone to degradation and contamination than the dry powder. Exact stability windows vary by specific peptide and manufacturer guidance, so storage instructions are best confirmed against the specific product and a pharmacist or physician rather than assumed to be universal.",
+    "category": "practical_use",
+    "related_slug": null
+  },
+  {
+    "id": "bacteriostatic-water",
+    "question": "What is bacteriostatic water and why do you need it?",
+    "answer": "Bacteriostatic water is sterile water that contains a small amount of benzyl alcohol as a preservative, which inhibits bacterial growth and allows a reconstituted vial to be used across multiple sessions rather than requiring a fresh vial each time. It differs from plain sterile water, which contains no antimicrobial preservative and is generally intended for single, immediate use once opened. Bacteriostatic water is described in the source material as the standard reconstitution liquid used across compounding and research peptide protocols specifically because of that preservative property.",
+    "category": "practical_use",
+    "related_slug": "understanding-insulin-syringe-components"
+  },
+  {
+    "id": "what-is-a-peptide-cycle",
+    "question": "What does a peptide cycle look like — how long do you take them?",
+    "answer": "Cycle structure varies substantially by specific peptide and is described very differently across the individual profiles in this library — some peptides, like Epithalon and Semax, are studied and used in short, defined courses of roughly one to a few weeks followed by an extended break, while others, like GLP-1 peptides such as semaglutide, are studied as ongoing chronic therapies without a defined stopping point, and still others fall in between with periodic on-and-off scheduling. Rather than a single 'peptide cycle' template, cycling patterns are described as tied to the specific compound's mechanism, half-life, and receptor behavior — details covered on each individual peptide's page — and are generally structured with physician input rather than a fixed personal schedule.",
+    "category": "practical_use",
+    "related_slug": null
+  },
+  {
+    "id": "stacking-peptides",
+    "question": "Can you stack multiple peptides together?",
+    "answer": "Combining more than one peptide, commonly called 'stacking,' is a documented practice in the source material — most notably pairing a growth hormone-releasing peptide like CJC-1295 with a growth hormone secretagogue like Ipamorelin, on the premise that the two activate different pathways toward a related outcome. Whether a given combination makes sense depends on the specific peptides, their mechanisms, and an individual's health profile, and is described as a decision made with physician guidance rather than a general practice recommended for everyone.",
+    "category": "practical_use",
+    "related_slug": "cjc-1295"
+  },
+  {
+    "id": "how-long-for-results",
+    "question": "How long before you see results from peptides?",
+    "answer": "Timelines vary widely by peptide, target, and individual, and are described very differently across the profiles in this library — some peptides, such as nasal-spray Semax or Selank, are described as producing effects within minutes to hours, while tissue-repair peptides like BPC-157 or TB-500 are generally described as requiring weeks of consistent use before meaningful change is reported, and metabolic peptides like semaglutide involve a gradual dose-escalation period spanning months. General expectations for a specific compound are covered on that compound's individual profile page rather than as a single answer across the category.",
+    "category": "practical_use",
+    "related_slug": null
+  },
+  {
+    "id": "peptides-for-injury-healing",
+    "question": "What are the best peptides for injury healing and recovery?",
+    "answer": "BPC-157 and TB-500 are the two peptides most associated with injury and tissue-repair research in the source material. BPC-157, isolated from human gastric juice, is researched for signaling new blood vessel formation, calming post-injury inflammation, and supporting repair in tendons, ligaments, muscle, and the gut lining. TB-500, a fragment of the natural repair protein Thymosin Beta-4, is researched for helping cells migrate to injury sites and supporting new blood vessel growth and wound closure through a different, complementary mechanism. Both remain research compounds without FDA approval, and program details are covered on each peptide's individual page.",
+    "category": "goal_specific",
+    "related_slug": "bpc-157"
+  },
+  {
+    "id": "peptides-for-weight-loss",
+    "question": "What peptides help with weight loss (besides Ozempic/semaglutide)?",
+    "answer": "Tirzepatide (brand names Mounjaro and Zepbound) is the most established alternative, activating two gut-hormone receptor pathways (GLP-1 and GIP) rather than one, and is associated in its clinical trial program with substantial average body weight loss. Newer GLP-1-class compounds such as retatrutide and mazdutide are also in active research, with mazdutide already approved in some markets outside the United States, though not yet FDA-approved domestically. All of these are prescription-track pharmaceutical peptides rather than research-only compounds, and specifics are covered on each one's individual profile page.",
+    "category": "goal_specific",
+    "related_slug": "tirzepatide"
+  },
+  {
+    "id": "peptides-for-anti-aging",
+    "question": "What peptides are best for anti-aging and longevity?",
+    "answer": "Epithalon and NAD+ (technically not a peptide itself, but closely associated with peptide longevity research) are the two most discussed compounds in this space. Epithalon is researched for its effect on telomerase activity and telomere length, alongside circadian and melatonin-related signaling, while NAD+ supplementation is researched for restoring cellular energy production and supporting the sirtuin proteins involved in DNA repair — both described in the source material as declining measurably with age. GHK-Cu is also frequently discussed in this category for its documented age-related decline and tissue-repair signaling role.",
+    "category": "goal_specific",
+    "related_slug": "epithalon"
+  },
+  {
+    "id": "peptides-for-skin-hair",
+    "question": "What peptides help with skin, collagen, and hair?",
+    "answer": "GHK-Cu is the peptide most associated with skin, collagen, and hair research in this library. It's a naturally occurring copper-carrying peptide that declines significantly with age, and it's researched for stimulating collagen production, supporting wound healing in skin and hair follicles, and broad anti-inflammatory activity — with topical application being the most studied and most commonly used route specifically for cosmetic goals.",
+    "category": "goal_specific",
+    "related_slug": "ghk-cu"
+  },
+  {
+    "id": "peptides-for-muscle-performance",
+    "question": "What peptides support muscle growth or athletic performance?",
+    "answer": "Growth hormone-axis peptides, including Sermorelin, CJC-1295, and Ipamorelin, are the category most associated with body composition and athletic performance research, working by signaling the pituitary gland to release growth hormone in a more natural, pulsatile pattern rather than replacing it directly. These are researched in connection with lean mass, recovery, and body composition, though none carry FDA approval for these specific uses, and any athlete considering them should also review anti-doping rules for their sport, since this class of peptide has historically drawn attention from sports governing bodies.",
+    "category": "goal_specific",
+    "related_slug": "ipamorelin"
+  },
+  {
+    "id": "peptides-for-sleep-recovery",
+    "question": "What peptides help with sleep and recovery?",
+    "answer": "DSIP (Delta Sleep-Inducing Peptide) is the compound most specifically associated with sleep research, named for its documented effect on deep, slow-wave sleep in early studies, and also researched for reducing cortisol and buffering the body's stress response. GH-axis peptides like Ipamorelin and Sermorelin are also connected to sleep and recovery, since growth hormone's largest natural pulse occurs during deep sleep and these peptides are researched for supporting that same rhythm.",
+    "category": "goal_specific",
+    "related_slug": "dsip"
+  },
+  {
+    "id": "peptides-for-brain-health",
+    "question": "Are there peptides for brain health and cognitive function?",
+    "answer": "Semax and Selank are the two peptides most associated with cognitive and neurological research in this library, both originally developed and studied in Russia. Semax is researched for raising BDNF (a brain growth factor) in memory-related brain regions and for neuroprotective effects, while Selank is researched primarily for modulating the brain's GABA system in connection with anxiety, alongside similar BDNF and mood-related effects. Neither is FDA-approved in the United States.",
+    "category": "goal_specific",
+    "related_slug": "semax"
+  },
+  {
+    "id": "peptides-for-gut-health",
+    "question": "What peptides support gut health?",
+    "answer": "BPC-157 and KPV are the two peptides most associated with gut-focused research. BPC-157, originally isolated from gastric juice, is researched for gut lining repair, ulcer protection, and reducing gut inflammation, and is notable among peptides for surviving digestion well enough that oral delivery is considered effective specifically for gut-targeted use. KPV is researched for blocking a key inflammatory signaling pathway in the gut and reinforcing the intestinal barrier, and is also unusually well-absorbed orally due to a specific gut transport mechanism.",
+    "category": "goal_specific",
+    "related_slug": "kpv"
+  },
+  {
+    "id": "what-is-bpc-157",
+    "question": "What is BPC-157 and what does it actually do?",
+    "answer": "BPC-157 (Body Protection Compound-157) is a 15-amino-acid peptide originally isolated from human gastric juice, thought to mimic a natural gut-protective and healing signal. It's researched for accelerating tissue repair across a range of tissue types — tendons, ligaments, muscle, skin, and the gut lining — largely by signaling new blood vessel formation and dialing down post-injury inflammation. Most of the supporting evidence comes from animal studies rather than large-scale human clinical trials, and it remains an unregulated research compound without FDA approval for human use.",
+    "category": "compound_specific",
+    "related_slug": "bpc-157"
+  },
+  {
+    "id": "bpc-157-vs-tb-500",
+    "question": "What's the difference between BPC-157 and TB-500?",
+    "answer": "Both are researched as tissue-repair peptides but work through different mechanisms. BPC-157 is a 15-amino-acid fragment linked to gastric-protective signaling, researched for new blood vessel formation and calming post-injury inflammation across a range of tissues, including the gut lining specifically. TB-500 is a shorter, 7-amino-acid fragment of the natural repair protein Thymosin Beta-4, researched for regulating the cell's internal structural scaffolding (actin) so cells can migrate toward injury sites and support wound closure and new blood vessel growth. The two are frequently discussed together, and sometimes combined, because their mechanisms are considered complementary rather than redundant, though neither is FDA-approved.",
+    "category": "compound_specific",
+    "related_slug": "tb-500"
+  },
+  {
+    "id": "what-is-ghk-cu",
+    "question": "What is GHK-Cu and is it just a skincare ingredient or more?",
+    "answer": "GHK-Cu (Glycyl-L-Histidyl-L-Lysine Copper Complex) is a small, naturally occurring peptide that carries a copper ion and is found in human blood, most abundant in youth and declining significantly with age. It's best known and most studied as a topical skincare ingredient for collagen stimulation and wound healing, but the source material also describes broader research into systemic effects, including anti-inflammatory activity and gene-expression changes, when it's researched via injection rather than applied topically. So while skincare is its most established use, the research base extends beyond cosmetic application.",
+    "category": "compound_specific",
+    "related_slug": "ghk-cu"
+  },
+  {
+    "id": "what-are-glp-1-peptides",
+    "question": "What are GLP-1 peptides (semaglutide, tirzepatide) and how do they work?",
+    "answer": "GLP-1 peptides are lab-engineered versions of a gut hormone (GLP-1) the body naturally releases after eating, modified to remain active for about a week instead of minutes. Semaglutide mimics that single hormone pathway, slowing stomach emptying, supporting insulin release, and reducing appetite signals to the brain. Tirzepatide activates two hormone pathways at once (GLP-1 and GIP), which is associated with a stronger metabolic and appetite-suppressing effect in its clinical trial data. Both are FDA-approved prescription drugs for diabetes and/or weight management, not research-only compounds.",
+    "category": "compound_specific",
+    "related_slug": "semaglutide"
+  },
+  {
+    "id": "what-is-epithalon",
+    "question": "What is Epithalon and can it really extend lifespan?",
+    "answer": "Epithalon is a synthetic four-amino-acid peptide modeled on a natural pineal gland extract, researched primarily for its effect on telomerase — the enzyme that maintains the protective caps (telomeres) on chromosomes — alongside circadian and melatonin-related signaling. Laboratory cell studies show it can activate telomerase and extend how long treated human cells continue dividing, and animal studies report modest increases in maximum lifespan in some rodent cohorts. Whether this translates into meaningful human lifespan extension is not established — the evidence to date comes from cell cultures, animal research, and some human observational data, not human randomized controlled trials designed to measure lifespan, so claims of proven human life extension go beyond what current research supports.",
+    "category": "compound_specific",
+    "related_slug": "epithalon"
+  },
+  {
+    "id": "cjc-1295-and-ipamorelin",
+    "question": "What are CJC-1295 and Ipamorelin, and are they worth it?",
+    "answer": "Both are growth hormone-axis peptides frequently used together. CJC-1295 is a modified version of the natural hormone that signals the pituitary gland to release growth hormone, engineered (in its DAC form) to remain active for days rather than minutes. Ipamorelin mimics a different natural signal (the ghrelin, or hunger-hormone, pathway) to trigger growth hormone release through a more selective mechanism than older compounds in its class, generally described as avoiding significant cortisol elevation. The pairing is researched for body composition, recovery, and sleep-related effects; whether it's 'worth it' for a given person depends on individual goals, health status, and physician guidance rather than a general answer, and neither compound is FDA-approved for these uses.",
+    "category": "compound_specific",
+    "related_slug": "cjc-1295"
+  },
+  {
+    "id": "is-nad-plus-a-peptide",
+    "question": "What is NAD+ and is it actually a peptide?",
+    "answer": "NAD+ (Nicotinamide Adenine Dinucleotide) is not technically a peptide — it's a different kind of molecule, a coenzyme found in every cell that's essential for converting food into usable cellular energy and for powering sirtuin proteins involved in DNA repair. It's grouped alongside peptides on this platform because it's researched and used in similar longevity-focused contexts and often administered through similar routes, but structurally it isn't a chain of amino acids the way a true peptide is. Related compounds NMN and NR are supplements the body converts into NAD+.",
+    "category": "compound_specific",
+    "related_slug": "nad-plus"
+  },
+  {
+    "id": "what-are-semax-and-selank",
+    "question": "What is Semax or Selank and what are they used for?",
+    "answer": "Both are short synthetic peptides developed in Russia and approved there as pharmaceutical drugs, though neither is FDA-approved in the United States. Semax, a modified fragment of a stress-response hormone, is researched and used clinically in Russia for stroke-related conditions, and more broadly researched for cognitive performance and neuroprotection through raising a brain growth factor called BDNF. Selank, a modified fragment of a natural immune-related peptide, is researched primarily for anxiety reduction through the brain's GABA system, alongside similar BDNF and mood-related effects, and is registered as an anti-anxiety pharmaceutical in Russia and Ukraine.",
+    "category": "compound_specific",
+    "related_slug": "semax"
+  },
+  {
+    "id": "where-to-get-peptides",
+    "question": "Where do people actually get peptides if they're not FDA-approved?",
+    "answer": "Non-FDA-approved peptides are generally accessed through one of a few channels: physician-supervised compounding pharmacies operating under FDA compounding rules, telehealth or wellness clinics that work with those pharmacies, or direct-to-consumer online sellers marketing products as 'research use only,' a designation that explicitly excludes human consumption and sits outside standard pharmacy oversight. These channels carry meaningfully different levels of oversight, quality control, and legal standing, which is described in the source material as one of the most important distinctions for anyone evaluating where a specific peptide comes from.",
+    "category": "access_and_sourcing",
+    "related_slug": null
+  },
+  {
+    "id": "finding-a-peptide-doctor",
+    "question": "How do you find a doctor who prescribes peptides?",
+    "answer": "Physicians who work with peptides are most commonly found through anti-aging, longevity, functional medicine, or hormone-optimization clinics, some of which specialize specifically in compounded peptide therapies, as well as through telehealth platforms that partner with compounding pharmacies. Verifying that a prescriber is appropriately licensed, and that any peptide involved is sourced through a legitimate compounding pharmacy rather than an unregulated online seller, is described in the source material as a key part of evaluating any provider in this space.",
+    "category": "access_and_sourcing",
+    "related_slug": null
+  },
+  {
+    "id": "how-much-do-peptides-cost",
+    "question": "How much do peptides cost?",
+    "answer": "Cost varies substantially by specific peptide, dose, formulation, and whether it's obtained through a compounding pharmacy, a telehealth clinic, or a direct online seller, so there isn't a single figure that applies across the category. FDA-approved GLP-1 drugs like semaglutide and tirzepatide, prescribed and dispensed through standard or compounding pharmacy channels, generally carry different — and more transparent — pricing than unregulated research peptides sold online, where price alone is not a reliable indicator of quality or legitimacy. A pharmacist, prescribing physician, or the specific vendor is the appropriate source for current pricing on a given product.",
+    "category": "access_and_sourcing",
+    "related_slug": null
+  },
+  {
+    "id": "pharma-grade-vs-research-grade",
+    "question": "What's the difference between pharmaceutical-grade and research-grade peptides?",
+    "answer": "'Pharmaceutical-grade' generally refers to peptides manufactured, tested, and dispensed under strict regulatory standards, typically through an FDA-approved drug manufacturer or a licensed compounding pharmacy following USP or similar quality standards, with accountability for purity, sterility, and accurate labeling. 'Research-grade' or 'research chemical' peptides are typically manufactured and sold without that oversight, explicitly labeled as not for human consumption, and carry no regulatory guarantee about what's actually in the vial. The terms describe the manufacturing and oversight pathway, not necessarily the chemical structure of the peptide itself, which is why sourcing and independent verification matter regardless of how a product is labeled.",
+    "category": "access_and_sourcing",
+    "related_slug": null
+  },
+  {
+    "id": "what-to-look-for-in-a-coa",
+    "question": "What should I look for in a Certificate of Analysis (CoA)?",
+    "answer": "A useful Certificate of Analysis is generated by an independent third-party lab, not the seller itself, and tied to the specific batch or lot number of the product being purchased, rather than a generic document reused across different batches. It should report the peptide's identity (confirming it is in fact the labeled compound), purity percentage, and testing for contaminants such as heavy metals, bacterial endotoxins, or residual solvents. A CoA that is undated, unattributed to a named lab, not batch-specific, or unverifiable by contacting the testing lab directly is generally treated as a weaker signal of legitimacy.",
+    "category": "access_and_sourcing",
+    "related_slug": null
+  },
+  {
+    "id": "is-the-peptide-hype-real",
+    "question": "Is the peptide hype real or is this just another supplement trend?",
+    "answer": "The picture is mixed rather than all-hype or fully substantiated. A subset of peptides — semaglutide, tirzepatide, teriparatide, tesamorelin, and sermorelin among them — have gone through full FDA drug approval on the strength of large human clinical trials, which is a meaningfully different evidence bar than most wellness trends clear. Many other peptides discussed in wellness and longevity contexts remain in earlier research stages, supported mainly by animal studies, small human trials, or practitioner-reported experience rather than large randomized trials, which is a genuine limitation worth weighing against the enthusiasm found in social media and marketing content.",
+    "category": "context_and_skepticism",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "why-so-little-clinical-data",
+    "question": "Why is there so little human clinical trial data on most peptides?",
+    "answer": "Several factors are described in the source material as contributing to this gap. Many peptides are not patentable in a way that makes large pharmaceutical-scale trials financially attractive to fund, since a naturally occurring or long-known sequence offers less commercial exclusivity than a novel drug. Some peptides originate from research conducted outside the United States — Russia is one example covered repeatedly in this library — under different regulatory and publication norms than FDA-track drug development. And peptides that remain in a research-use-only or compounding category, rather than pursuing formal FDA drug approval, are not required to go through the large controlled trials that approval demands, so evidence tends to accumulate from animal studies, small trials, and clinical practitioner experience instead.",
+    "category": "context_and_skepticism",
+    "related_slug": null
+  },
+  {
+    "id": "peptides-vs-protein-powder",
+    "question": "How are peptides different from traditional supplements like protein powder?",
+    "answer": "Protein powder is a food-derived source of amino acids that the body breaks down during digestion and reassembles into whatever proteins it needs — it doesn't act as a specific signal itself. A peptide, by contrast, is already a short, specific chain of amino acids that functions directly as a signaling molecule, binding to a particular receptor to deliver a targeted instruction, generally without needing to be broken down and rebuilt first. That's part of why many peptides require injectable or other non-oral delivery to reach the bloodstream intact, while protein powder is designed to be digested.",
+    "category": "context_and_skepticism",
+    "related_slug": "peptides-101"
+  },
+  {
+    "id": "peptide-medication-interactions",
+    "question": "Can peptides interact with medications I'm already taking?",
+    "answer": "Peptides can, in principle, interact with medications a person is already taking — GH-axis peptides can affect blood sugar and insulin sensitivity, for example, and GLP-1 peptides like semaglutide and tirzepatide are studied and prescribed specifically because they change blood sugar, appetite, and gut motility, all of which can affect how other drugs are absorbed or how insulin and blood-sugar medications need to be adjusted. This platform does not provide an interaction check against any individual's medication list; a pharmacist or the prescribing physician is the appropriate resource for reviewing a specific medication list before starting a peptide, described across the source material as standard practice rather than an optional precaution.",
+    "category": "context_and_skepticism",
+    "related_slug": "semaglutide"
+  },
+  {
+    "id": "peptides-banned-substance-list",
+    "question": "Are peptides on the banned substance list for sports?",
+    "answer": "Whether a specific peptide appears on a sports anti-doping list is decided by each governing body's own prohibited list — the World Anti-Doping Agency's list, for example, which many international and Olympic sports follow — rather than by anything on this platform, and prohibited lists are reviewed and updated periodically, so a compound's status can change year to year. Several categories of peptides discussed on this platform, including growth hormone-releasing peptides and GH secretagogues, fall into classes that anti-doping bodies have historically restricted for competitive athletes, but any athlete subject to testing needs to verify current status directly with their sport's governing body or anti-doping authority rather than relying on general peptide education content.",
+    "category": "context_and_skepticism",
+    "related_slug": "ipamorelin"
   }
 ]
