@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 
-import { stripe } from "@/lib/stripe/client";
+import { getStripe } from "@/lib/stripe/client";
 import { CONSUMER_TIER_BY_PRICE_ID, ORG_TIER_BY_PRICE_ID } from "@/lib/stripe/prices";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import type { SubscriptionStatus } from "@/types/database";
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
   let event: Stripe.Event;
   try {
-    event = stripe.webhooks.constructEvent(body, signature, process.env.STRIPE_WEBHOOK_SECRET!);
+    event = getStripe().webhooks.constructEvent(body, signature, process.env.STRIPE_WEBHOOK_SECRET!);
   } catch (err) {
     return NextResponse.json(
       { error: `Webhook signature verification failed: ${(err as Error).message}` },
