@@ -22,6 +22,7 @@ export default async function OrgLibraryPeptidePage({ params }: { params: { slug
         attorneyReviewed={peptide.frontmatter.attorney_reviewed}
         tier={org.tier}
         mdxSource={peptide.body}
+        logoUrl={org.logo_url}
       />
       <PoweredByFooter />
     </div>

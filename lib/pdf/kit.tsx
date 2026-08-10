@@ -1,4 +1,4 @@
-import { Document, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
+import { Document, Image, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
 
 import type { ContentFile } from "@/lib/content/mdx";
 import type { PeptideFrontmatter } from "@/lib/content/schema";
@@ -6,7 +6,16 @@ import type { Organization } from "@/types/database";
 
 const styles = StyleSheet.create({
   page: { padding: 40, fontSize: 11, fontFamily: "Helvetica" },
-  header: { marginBottom: 16, borderBottom: 1, borderBottomColor: "#e2e8f0", paddingBottom: 12 },
+  header: {
+    marginBottom: 16,
+    borderBottom: 1,
+    borderBottomColor: "#e2e8f0",
+    paddingBottom: 12,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  logo: { width: 36, height: 36, objectFit: "contain" },
   orgName: { fontSize: 16, fontWeight: 700 },
   watermark: { fontSize: 8, color: "#64748b", marginTop: 4 },
   peptideTitle: { fontSize: 14, fontWeight: 700, marginTop: 20, marginBottom: 6 },
@@ -36,8 +45,11 @@ export function ContentKitDocument({
       {peptides.map((peptide) => (
         <Page key={peptide.frontmatter.slug} size="LETTER" style={styles.page}>
           <View style={styles.header}>
-            <Text style={styles.orgName}>{org.display_name ?? org.org_name}</Text>
-            <Text style={styles.watermark}>For Educational Use Only — Provide Under Physician Supervision</Text>
+            {org.logo_url && <Image style={styles.logo} src={org.logo_url} />}
+            <View>
+              <Text style={styles.orgName}>{org.display_name ?? org.org_name}</Text>
+              <Text style={styles.watermark}>For Educational Use Only — Provide Under Physician Supervision</Text>
+            </View>
           </View>
           <Text style={styles.disclaimer}>{disclaimer}</Text>
           <Text style={styles.peptideTitle}>{peptide.frontmatter.name}</Text>
