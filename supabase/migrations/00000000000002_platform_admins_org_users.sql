@@ -35,3 +35,22 @@ returns boolean as $$
     select 1 from platform_admins where id = auth.uid()
   );
 $$ language sql stable security definer set search_path = public;
+
+-- True if the currently authenticated user owns the given org. Used instead
+-- of an inline `exists (select ... from org_users ...)` in any policy defined
+-- ON org_users itself: Postgres evaluates a `for all` policy on every SELECT
+-- too, and a raw subquery against the same table a policy is defined on
+-- re-triggers that table's policies — including the one currently being
+-- evaluated — which Postgres detects as genuine infinite recursion and
+-- refuses to run ("infinite recursion detected in policy for relation
+-- org_users"). Wrapping the check in this security definer function avoids
+-- it the same way current_org_id() and is_platform_admin() do.
+create or replace function is_org_owner(target_org_id uuid)
+returns boolean as $$
+  select exists (
+    select 1 from org_users
+    where org_users.id = auth.uid()
+    and org_users.org_id = target_org_id
+    and org_users.role = 'owner'
+  );
+$$ language sql stable security definer set search_path = public;

@@ -24,9 +24,7 @@ create policy "org staff can read own org"
 
 create policy "org owner can update own org"
   on organizations for update using (
-    (id = current_org_id() and exists (
-      select 1 from org_users where id = auth.uid() and role = 'owner'
-    )) or is_platform_admin()
+    (id = current_org_id() and is_org_owner(id)) or is_platform_admin()
   );
 
 create policy "platform admin manages organizations"
@@ -41,9 +39,7 @@ create policy "org staff can read own org roster"
 
 create policy "org owner manages own org roster"
   on org_users for all using (
-    (org_id = current_org_id() and exists (
-      select 1 from org_users u where u.id = auth.uid() and u.role = 'owner'
-    )) or is_platform_admin()
+    is_org_owner(org_id) or is_platform_admin()
   );
 
 -- peptides — Section 6.9's worked example: readable by org staff whose org
