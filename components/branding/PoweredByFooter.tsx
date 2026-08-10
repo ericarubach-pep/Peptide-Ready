@@ -1,3 +1,5 @@
+"use client";
+
 import { useBranding } from "@/components/branding/BrandProvider";
 
 // Section 8.5: Basic and Pro show a "Content by PeptideReady" footer line;
